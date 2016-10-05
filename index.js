@@ -53,6 +53,7 @@ function casper(options) {
                     message: 'code ' + code
                 }));
             }
+            self.emit('end');
             cb();
         });
     };
